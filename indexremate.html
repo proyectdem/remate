@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Cash Remate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hacer que el encabezado use una imagen de fondo */
+        header {
+            background-color: #f4f4f4; /* Cambia este color por el que prefieras */
+			background-image: url('ENCABEZADO5.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
+            background-size: cover; /* Esto hará que la imagen cubra todo el header */
+            background-position: center; /* Centrar la imagen */
+			background-repeat: no-repeat;
+            color: white;
+            padding: 50px 10px;
+            text-align: center;
+            height: auto; /* Ajusta la altura del encabezado si es necesario */
+            position: relative;
+        }
+
+        /* Sombra en el texto del encabezado */
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Flexbox para la sección de "Quiénes Somos" y "Ubicación" */
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-left, .info-right {
+            width: 48%;
+        }
+
+        /* Ajustar el tamaño del mapa y video para que sean iguales */
+        .video-map-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .video-map-container iframe, .video-map-container video {
+            width: 50%;
+            height: 300px; /* Ambos elementos tendrán la misma altura */
+        }
+
+        /* Para dispositivos móviles */
+        @media (max-width: 768px) {
+            .video-map-container {
+                flex-direction: column; /* Para que el video y el mapa estén uno debajo del otro */
+            }
+
+            .video-map-container iframe, .video-map-container video {
+                width: 100%;
+                height: auto; /* Elimina la altura fija en dispositivos pequeños */
+            }
+
+            .info-left, .info-right {
+                width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Cash Remate Tu Tienda De Oportunidad</h1>
+    <p>Venta de Lavadoras, estufas, refrigeradores, congeladores, ventiladores, hornos de microondas, y mucho más</p>
+    <!-- Menú de navegación dentro del header -->
+    <nav>
+        <ul>
+            <li><a href="indexremate.html">Inicio</a></li>
+            <li><a href="Oferta Lavadoras.html">Lavadoras</a></li>
+            <li><a href="Oferta Refrigeradores.html">Refrigeradores</a></li>
+            <li><a href="Oferta Congeladores.html">Congeladores</a></li>
+            <li><a href="Oferta Estufas.html">Estufas</a></li>
+            <li><a href="Oferta Ventiladores.html">Ventiladores</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sección de quiénes somos y ubicación en la misma fila -->
+<section class="info-section">
+    <div class="info-left">
+        <h2>Quiénes Somos</h2>
+        <p>En Cash Remate, Nos distinguimos por ofrecer los mejores productos a los mejores precios, además de ofrecer artículos de OPORTUNIDAD que podrás adquirir a precios incomparables. Nuestros más de 25 años sirviéndote nos respaldan.</p>
+        <p><strong>Teléfono local:</strong> 9616124174</p>
+        <p><strong>WhatsApp:</strong> 9613330219</p>
+    </div>
+
+    <div class="info-right">
+        <h2>Ubicación y Productos Especiales</h2>
+        <div class="video-map-container">
+            <!-- Mapa de ubicación -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5615251834224!2d-93.1204639258565!3d16.748716020891713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd8f5357bee83%3A0xcba72bbe8777755f!2sAv.%20Sexta%20Sur%20Pte.%20199-153%2C%20El%20Calvario%2C%2029000%20Tuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1ses-419!2smx!4v1727887627825!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Video de productos especiales -->
+            <video controls>
+                <source src="C:\Users\LENOVO\Desktop\REMATE\CONGELADORES.mp4" type="video/mp4">
+                <source src="ruta_del_video.ogv" type="video/ogg">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Cash Mueblería - Contacto: 9613330219</p>
+</footer>
+
+</body>
+</html>

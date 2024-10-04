@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeradores - Cash Remate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        /* Hacer que el encabezado use una imagen de fondo */
+        header {
+            background-image: url('ehibicion.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
+            background-size: cover; /* Esto hará que la imagen cubra todo el header */
+            background-position: center; /* Centrar la imagen */
+            color: white;
+            padding: 50px 15px; /* Puedes ajustar el padding según lo necesites */
+            text-align: center;
+            height: 35vh; /* Ajusta la altura del encabezado si es necesario */
+            position: relative;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 15px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            max-width: 350px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            display: none;
+            cursor: pointer;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Aquí está la clase que resalta el precio */
+        .highlight-price {
+            font-size: 20px;
+            color: red;
+			font-weight: bold;
+        }
+
+		footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Oferta Refrigeradores- Cash Tu Tienda De Oportunidad</h1>
+</header>
+
+<!-- Menú de navegación -->
+<nav>
+    <ul>
+        <li><a href="indexremate.html">Inicio</a></li>
+        <li><a href="Oferta Lavadoras.html">Lavadoras</a></li>
+        <li><a href="Oferta Refrigeradores.html">Refrigeradores</a></li>
+        <li><a href="Oferta Congeladores.html">Congeladores</a></li>
+        <li><a href="Oferta Estufas.html">Estufas</a></li>
+        <li><a href="Oferta Ventiladores.html">Ventiladores</a></li>
+		<li><a href="Contactanos.html">Contactanos</a></li>
+		
+    </ul>
+</nav>
+
+<!-- Sección de Refrigeradores -->
+<section>
+    <div class="container">
+        <!-- Producto 1 -->
+        <div class="product">
+            <h3>Clave: RR63D6WRX</h3>
+            <div class="carousel" data-index="0" data-start-index="0">
+                <img src="C:\Users\LENOVO\Desktop\REMATE\RR63D6WRX.jpg" alt="ALF1551ER1" onclick="openImage(this)">
+				<img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 2.JPG" alt="RR63D6WRX2" onclick="openImage(this)">
+				<img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 3.JPG" alt="RR63D6WRX3" onclick="openImage(this)">
+                <a class="prev" onclick="changeImage(-1, 0)">&#10094;</a>
+                <a class="next" onclick="changeImage(1, 0)">&#10095;</a>
+            </div>
+            <h3>Refrigerador 7 p3 Hisense</h3>
+            <p><strong>Tipo:</strong> Refrigerador</p>
+            <p><strong>Descripción:</strong> Refrigerador 7 p3 con despachador color rojo, 1 año de garantía </p>
+            <p><strong>Precio:</strong> $6,340 MXN</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <h3>Clave: RR63D6WGX</h3>
+            <div class="carousel" data-index="1" data-start-index="0">
+                <img src="C:\Users\LENOVO\Desktop\REMATE\RR63D6WGX.jpg" alt="RR63D6WGX1" onclick="openImage(this)">
+                <img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 2.JPG" alt="RR63D6WGX2" onclick="openImage(this)">
+				<img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 3.JPG" alt="RR63D6WGX3" onclick="openImage(this)">
+                <a class="prev" onclick="changeImage(-1, 1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1, 1)">&#10095;</a>
+            </div>
+            <h3>Refrigerador 7 p3 Hisense </h3>
+            <p><strong>Tipo:</strong> Refrigerador</p>
+            <p><strong>Descripción:</strong> Refrigerador 7 p3 con despachador color gris, 1 año de garantía </p>
+            <p><strong>Precio:</strong> $5,795 MXN</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product">
+            <h3>Clave: RR63D6WWX</h3>
+            <div class="carousel" data-index="2" data-start-index="0">
+                <img src="C:\Users\LENOVO\Desktop\REMATE\RR63D6WWX.jpg" alt="RR63D6WWX1" onclick="openImage(this)">
+                <img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 2.JPG" alt="RR63D6WWX2" onclick="openImage(this)">
+				<img src="C:\Users\LENOVO\Desktop\REMATE\IMAGEN 3.JPG" alt="RR63D6WWX3" onclick="openImage(this)">
+                <a class="prev" onclick="changeImage(-1, 2)">&#10094;</a>
+                <a class="next" onclick="changeImage(1, 2)">&#10095;</a>
+            </div>
+            <h3>Refrigerador 7 p3 Hisense</h3>
+            <p><strong>Tipo:</strong> Refrigerador</p>
+            <p><strong>Descripción:</strong> Refrigerador 7 p3 con despachador color blanco, 1 año de garantía </p>
+            <p class="highlight-price"><strong>Precio:</strong> $5,440 MXN</p>
+        </div>
+		
+		
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Cash Remate Tu Tienda De Oportunidad - Contacto: 9616124174</p>
+</footer>
+
+<script>
+    let slideIndex = []; // Aquí almacenaremos el índice actual de cada carrusel
+    const carousels = document.getElementsByClassName("carousel");
+
+    // Función que inicializa los carruseles con la imagen seleccionada
+    function initializeCarousels() {
+        for (let i = 0; i < carousels.length; i++) {
+            let carousel = carousels[i];
+            let startIndex = parseInt(carousel.getAttribute("data-start-index")) || 0; // Si no se especifica, empieza en 0
+            let images = carousel.getElementsByTagName("img");
+            
+            // Establecemos el índice inicial para este carrusel
+            slideIndex[i] = startIndex;
+
+            // Ocultar todas las imágenes y mostrar solo la seleccionada
+            for (let j = 0; j < images.length; j++) {
+                images[j].classList.remove("active");
+            }
+            images[slideIndex[i]].classList.add("active");
+        }
+    }
+
+    // Función para cambiar la imagen del carrusel
+    function changeImage(n, productIndex) {
+        let images = carousels[productIndex].getElementsByTagName("img");
+        slideIndex[productIndex] += n;
+
+        if (slideIndex[productIndex] >= images.length) {
+            slideIndex[productIndex] = 0;
+        }
+        if (slideIndex[productIndex] < 0) {
+            slideIndex[productIndex] = images.length - 1;
+        }
+
+        // Ocultar todas las imágenes y mostrar solo la actual
+        for (let i = 0; i < images.length; i++) {
+            images[i].classList.remove("active");
+        }
+        images[slideIndex[productIndex]].classList.add("active");
+    }
+
+    // Función para abrir la imagen en una nueva ventana
+    function openImage(img) {
+        window.open(img.src, '_blank');
+    }
+
+    // Inicializar carruseles cuando se cargue la página
+    document.addEventListener("DOMContentLoaded", initializeCarousels);
+</script>
+
+</body>
+</html>
